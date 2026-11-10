@@ -2,6 +2,8 @@
 
 A configurable arc gauge for Home Assistant. It supports multiple stacked bars, a zero/centre origin, a centre display, condition-based colours, and an optional secondary bar with an icon. See `examples/water.yaml` and `examples/solar.yaml`.
 
+![Water gauge](docs/water.svg) ![Solar gauge](docs/solar.svg)
+
 ## Install
 
 Add this repository to HACS as a custom repository (type: Dashboard), or copy `dist/gauge-card.js` to `config/www` and add it as a resource.
@@ -13,6 +15,7 @@ npm install
 npm test
 npm run build   # dist/gauge-card.js
 npm run dev     # open /dev/index.html for a mock-state harness
+npm run docs    # regenerate the images in docs/
 ```
 
 ## Configuration

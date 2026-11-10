@@ -22,3 +22,5 @@ jobs:
       - run: npm test
       - run: npm run build
       - run: test -s dist/gauge-card.js
+      - name: Check the committed bundle is current
+        run: git diff --exit-code -- dist/gauge-card.js

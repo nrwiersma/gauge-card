@@ -1,0 +1,61 @@
+type: custom:gauge-card
+gauge:
+  radius: 125
+  width: 45
+  gap: 90
+  spacing: 10
+bars:
+  - entity: sensor.load_power
+    min: -6000
+    max: 6000
+    origin: 0
+    reverse: true
+    color: "#73bf69"
+  - entity: sensor.pv_power
+    min: -6000
+    max: 6000
+    origin: 0
+    reverse: true
+    color: "#ff9830"
+  - entity: sensor.battery_power
+    min: -6000
+    max: 6000
+    origin: 0
+    reverse: true
+    color: "#5794f2"
+  - entity: sensor.grid_power
+    min: -6000
+    max: 6000
+    origin: 0
+    reverse: true
+    color: "#f2495c"
+secondary:
+  entity: sensor.battery_soc
+  padding: 20
+  inset: 5
+  color: "#37c7ff"
+  color_rules:
+    - when: { lte: 20 }
+      color: "#f2495c"
+    - when: { lte: 40 }
+      color: "#ff9830"
+  track:
+    width: 30
+    color: "#282828"
+  icon:
+    icon: mdi:home-battery
+    color: "#c3c3c3"
+center:
+  entity: sensor.load_power
+  scale: 0.001
+  decimals: 2
+  unit: kW
+  segments:
+    - { type: integer, size: 70 }
+    - { type: fraction, size: 45, shift: 0 }
+    - { type: unit, size: 20, shift: 20 }
+indicators:
+  - icon: mdi:transmission-tower-off
+    color: "#f2495c"
+    size: 28
+    when: { entity: sensor.grid_frequency, lt: 10 }

@@ -1,0 +1,48 @@
+type: custom:gauge-card
+gauge:
+  radius: 100
+  width: 20
+  gap: 80
+  color: "#282828"
+  color_rules:
+    - when: { entity: binary_sensor.geyser_heating, state: "on" }
+      color: "#3d2d1d"
+bars:
+  - entity: sensor.geyser_percent
+    min: 0
+    max: 100
+    color: "#5794f2"
+    color_rules:
+      - when: { entity: binary_sensor.geyser_heating, state: "on" }
+        color: "#ff9830"
+      - when: { lte: 30 }
+        color: "#f2495c"
+      - when: { lte: 50 }
+        color: "#ff9830"
+secondary:
+  entity: sensor.tank_percent
+  padding: 15
+  inset: 5
+  color: "#37c7ff"
+  color_rules:
+    - when: { lte: 30 }
+      color: "#f2495c"
+    - when: { lte: 50 }
+      color: "#ff9830"
+  track:
+    width: 15
+    color: "#282828"
+  icon:
+    icon: mdi:storage-tank
+    color: "#c3c3c3"
+center:
+  entity: sensor.geyser_percent
+  unit: "%"
+  segments:
+    - { type: integer, size: 60 }
+    - { type: unit, size: 20, shift: 33 }
+indicators:
+  - icon: mdi:alert
+    color: "#f2495c"
+    size: 28
+    when: { entity: binary_sensor.water_connected, state: "off" }

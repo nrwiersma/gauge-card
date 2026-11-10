@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325 325" width="325" height="325" font-family="Roboto, Helvetica, Arial, sans-serif">
+<rect width="325" height="325" rx="12" fill="#1c1c1c"/>
+<path d="M 74.112 250.888 A 125 125 0 1 1 250.888 250.888" fill="none" stroke="#282828" stroke-width="45" stroke-linecap="round"/>
+<path d="M 109.673 275.788 A 125 125 0 0 0 215.327 275.788" fill="none" stroke="#282828" stroke-width="30" stroke-linecap="round"/>
+<path d="M 109.673 275.788 A 125 125 0 0 0 167.952 287.381" fill="none" stroke="#37c7ff" stroke-width="20" stroke-linecap="round"/>
+<path d="M 162.5 22.5 A 140 140 0 0 0 70.329 57.122" fill="none" stroke="#73bf69" stroke-width="5" stroke-linecap="round"/>
+<path d="M 162.5 32.5 A 130 130 0 0 0 38.863 122.328" fill="none" stroke="#ff9830" stroke-width="5" stroke-linecap="round"/>
+<path d="M 162.5 42.5 A 120 120 0 0 1 225.2 60.183" fill="none" stroke="#5794f2" stroke-width="5" stroke-linecap="round"/>
+<text x="162.5" y="187.7" text-anchor="middle"><tspan font-size="70" dy="0" fill="#ffffff">1</tspan><tspan font-size="45" dy="0" fill="#ffffff">.83</tspan><tspan font-size="20" dy="-20" fill="#ffffff">kW</tspan></text>
+<path d="M12 20L5 20V12H2L12 3L14.78 5.5H14V7.17C12.84 7.58 12 8.7 12 10V20M15 9H16V7.5H20V9H21C21.55 9 22 9.45 22 10V21C22 21.55 21.55 22 21 22H15C14.45 22 14 21.55 14 21V10C14 9.45 14.45 9 15 9M16 11V14H20V11H16Z" fill="#c3c3c3" transform="translate(150.5 248) scale(1)"/>
+</svg>
